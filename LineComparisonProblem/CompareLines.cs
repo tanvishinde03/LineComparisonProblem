@@ -6,35 +6,24 @@ using System.Threading.Tasks;
 
 namespace LineComparisonProblem
 {
-    public class EqualityBetweenLines
+    public class CompareLines
     {
+
         int lengthX, _lengthY, lenGthsX, lengthsY;
-        public EqualityBetweenLines(int lengthX, int lengthY, int lengthsX, int lengthsY)
+        public CompareLines(int lengthX, int lengthY, int lengthsX, int lengthsY)
         {
             this.lengthX = lengthX;
             _lengthY = lengthY;
             lenGthsX = lengthsX;
             this.lengthsY = lengthsY;
         }
-        public double Equality()
+        public double LineComppare()
         {
             double length = Math.Sqrt(Math.Pow((lenGthsX - lengthX), 2) + Math.Pow((lengthsY - _lengthY), 2));
             Console.WriteLine("Lenght of the line is : " + length);
-          
+
             return length;
         }
-        
-
-
-
-
-
-
-
-
-
-
-
 
 
 

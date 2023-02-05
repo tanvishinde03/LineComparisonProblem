@@ -16,15 +16,42 @@ namespace LineComparisonProblem
 
             // UC2
 
-            EqualityBetweenLines length_Two = new EqualityBetweenLines(5, 6, 7, 8);
-            double length_ = length_Two.Calculate();
+            EqualityBetweenLines length1 = new EqualityBetweenLines(5, 6, 7, 8);
+            double length_ = length1.Equality();
 
             if (length.Equals(length_))
                 Console.WriteLine("Both lines are equal");
             else
                 Console.WriteLine("Both lines are not equal");
 
-            Console.ReadLine();
+
+
+            //UC3
+
+            CompareLines Length2 = new CompareLines(9, 1, 2, 3);
+            double _Length = Length2.LineComppare();
+
+            CompareLines Length3 = new CompareLines(4, 5, 6, 7);
+            double Length = Length3.LineComppare();
+
+
+            if (_Length.CompareTo(Length2) == 0)
+
+                Console.WriteLine("Equal");
+
+            else if (Length.CompareTo(Length2) > 0)
+
+                Console.WriteLine("Line one is greater");
+            else
+                Console.WriteLine("Line two is greater");
+            Console.ReadKey();
+
+        }
+
+
+
+
+       
         }
 
 
@@ -34,5 +61,5 @@ namespace LineComparisonProblem
 
 
     }
-    }
+    
 
