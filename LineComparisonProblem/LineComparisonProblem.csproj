@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CompareLines.cs" />
+    <Compile Include="CompareToMethod.cs" />
     <Compile Include="EqualityBetweenLines.cs" />
     <Compile Include="CalculateLength.cs" />
     <Compile Include="Program.cs" />
